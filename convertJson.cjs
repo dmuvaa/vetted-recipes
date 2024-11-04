@@ -36,4 +36,5 @@ function convertToJsonArray(inputPath, outputPath) {
   outputStream.end();
 }
 
-convertToJsonArray('./recipes_test.json', './recipes_test_array.json');
+// convertToJsonArray('./recipes_test.json', './recipes_test_array.json');
+convertToJsonArray('./recipes_fn.json', './recipes_fn_array.json');

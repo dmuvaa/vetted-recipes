@@ -15,7 +15,7 @@ export default function Header() {
             <Link href="/" className="text-orange-800 hover:text-orange-600 transition-colors">Home</Link>
             <Link href="/about" className="text-orange-800 hover:text-orange-600 transition-colors">About Us</Link>
             <Link href="/categories" className="text-orange-800 hover:text-orange-600 transition-colors">Categories</Link>
-            <Link href="/submit-recipe" className="text-orange-800 hover:text-orange-600 transition-colors">Submit Recipe</Link>
+            <Link href="/recipes" className="text-orange-800 hover:text-orange-600 transition-colors">Recipes</Link>
           </nav>
           <div className="flex items-center space-x-2">
             <Input 

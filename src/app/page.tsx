@@ -3,13 +3,10 @@ import Link from 'next/link'
 import { Search } from 'lucide-react'
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
-import Header from '../components/Header'
-import Footer from '../components/Footer'
 
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col">
-      <Header />
       <main className="flex-grow">
         {/* Hero Section */}
         <section className="relative bg-orange-100 py-20">
@@ -83,7 +80,6 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <Footer />
     </div>
   )
 }

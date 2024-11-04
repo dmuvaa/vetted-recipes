@@ -75,7 +75,7 @@ async function insertRecipesBatch(recipesBatch) {
 }
 
 async function main() {
-  const files = ['./recipes_test_array.json'];
+  const files = ['./recipes_fn_array.json'];
 
   for (const filePath of files) {
     console.log(`Processing file: ${filePath}`);
