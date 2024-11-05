@@ -35,7 +35,7 @@ export default async function RecipePage({ params }: RecipePageProps) {
 
     // Manually serialize Date fields
     const recipe: Recipe = {
-      id: rawRecipe.id, // Now a String, no need to convert
+      id: rawRecipe.id.toString(), // Now a String, no need to convert
       title: rawRecipe.title,
       slug: rawRecipe.slug,
       ingredients: rawRecipe.ingredients,
