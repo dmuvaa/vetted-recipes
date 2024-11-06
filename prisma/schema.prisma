@@ -18,5 +18,5 @@ model Recipe {
   updatedAt    DateTime @updatedAt
 
   // Define the search_vector field with type tsvector
-  search_vector String?
+  search_vector String? @ignore
 }
