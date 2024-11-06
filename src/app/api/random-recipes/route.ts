@@ -26,7 +26,7 @@ export async function GET(request: Request) {
     `;
 
     // Convert BigInt to string to ensure JSON serialization
-    const serializedRecipes = recipes.map((recipe) => ({
+    const serializedRecipes = recipes.map((recipe: Recipe) => ({
       id: recipe.id.toString(),
       title: recipe.title,
       slug: recipe.slug,
