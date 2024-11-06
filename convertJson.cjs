@@ -37,4 +37,4 @@ function convertToJsonArray(inputPath, outputPath) {
 }
 
 // convertToJsonArray('./recipes_test.json', './recipes_test_array.json');
-convertToJsonArray('./recipes_ar.json', './recipes_ar_array.json');
+convertToJsonArray('./recipes_epi_cleaned.json', './recipes_epi_array.json');

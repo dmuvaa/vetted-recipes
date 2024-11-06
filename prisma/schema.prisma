@@ -14,9 +14,9 @@ model Recipe {
   slug         String   @unique
   ingredients  String[]
   instructions String
-  searchVector String   // Add the search vector here as a string
   createdAt    DateTime @default(now())
   updatedAt    DateTime @updatedAt
 
-  @@index([title], map: "idx_recipe_title")
+  // Define the search_vector field with type tsvector
+  search_vector String?
 }
