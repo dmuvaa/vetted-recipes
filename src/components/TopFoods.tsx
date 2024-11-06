@@ -28,7 +28,6 @@ const topFoods = [
   'Turkey', 'Waffles', 'White Chocolate Souffle', 'Yakitori', 'Yogurt', 'Ziti'
 ];
 
-
 export default function TopFoods() {
   return (
     <section className="py-16 bg-gray-50">

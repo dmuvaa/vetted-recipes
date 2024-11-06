@@ -16,6 +16,8 @@ model Recipe {
   instructions String
   createdAt    DateTime @default(now())
   updatedAt    DateTime @updatedAt
+  searchVector String?  @db.TsVector // Full-text search vector for PostgreSQL
 
   @@index([title], map: "idx_recipe_title")
+  @@index([searchVector], type: "gin", map: "idx_recipe_search_vector") // Index for efficient full-text search
 }
