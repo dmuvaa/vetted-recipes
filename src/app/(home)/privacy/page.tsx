@@ -1,7 +1,3 @@
-// File: src/app/privacy/page.tsx
-
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-
 // /privacy/page.tsx
 
 export default function PrivacyPolicy() {
