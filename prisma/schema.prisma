@@ -14,10 +14,9 @@ model Recipe {
   slug         String   @unique
   ingredients  String[]
   instructions String
+  searchVector String   // Add the search vector here as a string
   createdAt    DateTime @default(now())
   updatedAt    DateTime @updatedAt
-  searchVector String?  @db.TsVector // Full-text search vector for PostgreSQL
 
   @@index([title], map: "idx_recipe_title")
-  @@index([searchVector], type: "gin", map: "idx_recipe_search_vector") // Index for efficient full-text search
 }
