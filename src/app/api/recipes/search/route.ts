@@ -42,7 +42,7 @@ export async function GET(request: NextRequest) {
       totalCount = await prisma.$queryRaw<{ count: string }[]>`
         SELECT COUNT(*) FROM "Recipe"
         WHERE search_vector @@ plainto_tsquery('english', ${query});
-      `.then(res => parseInt(res[0].count, 10));
+      `.then((res: { count: string }[]) => parseInt(res[0].count, 10));
     }
 
     return NextResponse.json({ recipes, totalCount });
