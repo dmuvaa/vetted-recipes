@@ -40,3 +40,6 @@ yarn-error.log*
 next-env.d.ts
 
 recipes_ar_array.json
+recipes_epi_array.json
+recipes_epi_cleaned_final.json
+recipes_fn_array.json
