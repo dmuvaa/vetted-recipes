@@ -1,9 +1,8 @@
-"use client"
+"use client";
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { Search, Menu, X } from 'lucide-react';
-import { Input } from "@/components/ui/input";
+import { Menu, X } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 
 export default function Header() {
@@ -19,29 +18,16 @@ export default function Header() {
           Vetted Recipes
         </Link>
 
-        {/* Search and Menu Button */}
-        <div className="flex items-center space-x-2">
-          <Input 
-            type="search" 
-            placeholder="Search recipes..." 
-            className="w-40 md:w-64 bg-white border-orange-300 focus:border-orange-500"
-          />
-          <Button variant="ghost" size="icon" className="text-orange-600 hover:text-orange-700 hover:bg-orange-200">
-            <Search className="h-5 w-5" />
-            <span className="sr-only">Search</span>
-          </Button>
-
-          {/* Hamburger Icon for Mobile */}
-          <Button 
-            variant="ghost" 
-            size="icon" 
-            className="text-orange-600 md:hidden" 
-            onClick={toggleMenu}
-          >
-            {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-            <span className="sr-only">Menu</span>
-          </Button>
-        </div>
+        {/* Hamburger Icon for Mobile */}
+        <Button 
+          variant="ghost" 
+          size="icon" 
+          className="text-orange-600 md:hidden" 
+          onClick={toggleMenu}
+        >
+          {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          <span className="sr-only">Menu</span>
+        </Button>
 
         {/* Desktop Navigation Links */}
         <nav className="hidden md:flex space-x-6">
