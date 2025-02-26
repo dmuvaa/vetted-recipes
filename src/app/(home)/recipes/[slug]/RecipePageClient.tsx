@@ -31,7 +31,7 @@ export default function RecipePageClient({ recipe }: RecipePageClientProps) {
       <Card className="w-full max-w-3xl mx-auto">
         <CardHeader>
           <CardTitle className="text-3xl font-bold">
-            Best Recipe For {recipe?.title || "Recipe"}
+            Best Recipe for {recipe?.title || "Recipe"}
           </CardTitle>
         </CardHeader>
         <CardContent>

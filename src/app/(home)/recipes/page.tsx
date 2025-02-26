@@ -48,7 +48,7 @@ export default async function RecipesPage({ searchParams }: RecipesPageProps) {
       <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6">
         {recipes.map((recipe) => (
           <li key={recipe.slug} className="border rounded-lg p-4 shadow hover:shadow-lg transition">
-            <Link href={`/recipes/${recipe.slug}`} className="text-2xl font-semibold text-blue-600 hover:underline">
+            <Link href={`/recipes/${recipe.slug}`} className="text-2xl font-semibold text-orange-700 hover:underline">
               {recipe.title}
             </Link>
           </li>
@@ -178,7 +178,7 @@ function PaginationControls({
       {currentPage > 1 ? (
         <Link
           href={buildLink(currentPage - 1)}
-          className="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
+          className="px-6 py-3 bg-orange-500 text-white rounded-lg hover:bg-blue-600 transition"
         >
           Previous
         </Link>
@@ -193,7 +193,7 @@ function PaginationControls({
       {currentPage < totalPages ? (
         <Link
           href={buildLink(currentPage + 1)}
-          className="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
+          className="px-6 py-3 bg-orange-500 text-white rounded-lg hover:bg-blue-600 transition"
         >
           Next
         </Link>
